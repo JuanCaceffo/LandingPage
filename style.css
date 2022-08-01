@@ -100,7 +100,7 @@ h1{
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    padding: 100px 0px;
+    padding-top: 100px;
 }
 /*------------------article 1------------------*/
 .content__element1{
@@ -136,22 +136,28 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     width: 100vw;
     background-color: var(--Very--Pale--Blue);
-    padding: 100px 30px;
+    padding: 200px 30px;
     text-align: center;
 }
 .bg__1{
+    position: absolute;
     width: 100%;
     height: 100px;
 }
 .bg__1--top{
     background:scroll white url(./images/bg-section-top-mobile-1.svg) bottom no-repeat;
     background-size:100%  100px;
+    top: 0;
+    left: 0;
 }   
 .bg__1--bottom{
     background: scroll white url(./images/bg-section-bottom-mobile-1.svg) top no-repeat;
     background-size:100%  100px;
+    bottom: 0;
+    left: 0;
 }
 .element2__illustration{
     width: 70%;
@@ -186,23 +192,29 @@ h1{
 .content__element4{
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 100vw;
     align-items: center;
-    padding: 100px 30px;
+    padding: 200px 30px;
     text-align: center;
     background-color: var(--Very--Pale--Blue);
 }
 .bg__2{
     width: 100%;
     height: 100px;
+    position: absolute;
 }
 .bg__2--top{
     background: scroll white url(./images/bg-section-top-mobile-1.svg) bottom no-repeat;
     background-size: 100% 100px;
+    top: 0;
+    left: 0;
 }
 .bg__2--bottom{
     background: scroll white url(./images/bg-section-bottom-mobile-2.svg) top no-repeat;
     background-size: 100% 100px;
+    bottom: 0;
+    left: 0;
 }
 .element4__illustration{
     width: 70%;
@@ -215,25 +227,28 @@ h1{
 /*------------------article 5------------------*/
 .content__element5{
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 100vw;
     align-items: center;
-    margin: 100px 0px;
     text-align: center;
+    padding: 100px 0px 300px;
 }
 .element5__titel{
     font-size: 30px;
     margin-bottom: 40px;
 }
-/*------------------END section------------------*/
-/*------------------footer------------------*/
 .footer__bg{
     width: 100vw;
     height: 100px;
     background: scroll white url(./images/bg-footer-top-mobile.svg) bottom no-repeat;
     background-size: 100% 100px;
-    
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+/*------------------END section------------------*/
+/*------------------footer------------------*/
 /*------------------final------------------*/
 .final{
     display: flex;
@@ -244,7 +259,6 @@ h1{
     background-color: var(--Very--Dark--Cyan);
     color: white;
 }
-
 /*------------------final form------------------*/
 .final__form{
     display: flex;
@@ -450,18 +464,17 @@ h1{
        font-size: 40px;
        font-weight: 900;
    }
-   /*------------------footer------------------*/
    .footer__bg{
-       background-image: url(./images/bg-footer-top-desktop.svg);
-   }
+    background-image: url(./images/bg-footer-top-desktop.svg);
+    }
+   /*------------------footer------------------*/
    /*------------------final------------------*/
-   /*------------------final form------------------*/
    .final{
        flex-direction: row-reverse;
        padding-top: 100px;
        justify-content: space-around;
        align-items: flex-start;
-   }
+    }
    .final__contact{
        width: 30%;
    }
@@ -478,7 +491,6 @@ h1{
        display: flex;
        gap: 30px;
    }
-   /*------------------final contact------------------*/
    .contact__logo{
        width: 220px;
    }
